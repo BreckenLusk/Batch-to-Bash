@@ -5,12 +5,14 @@ read srcdir
 cd $srcdir
 echo "\nEnter the name of the Batch file: "
 read batname
+echo "Enter Destination Directory: "
+read dstdir
 filename="$batname"
 n=1
 echo "\nConverting..."
 while read line; do
   sed 's/%/$/g'
-  sed 's///-/g'
+  #sed 's///-/g'
   sed 's/\///g'
   sed 's/==/=/g'
   sed 's/!==!/!=/g'
@@ -47,9 +49,5 @@ while read line; do
   #sed 's/COM1//dev/ttyS0/gI'
   n=$((n+1))
 echo "\nDone!"
-echo "Enter Destination Directory: "
-read dstdir
-echo "Enter a name for the Bash file: "
-read bashname
-done < $dtdir$bashname
-exit
+cd $dstdir
+done < $batname.sh
