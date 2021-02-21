@@ -1,2 +1,2 @@
-# Brecken@Breckens-GitHub-Repo ~ % Batch-to-Bash.sh
-This is a simple tool which will convert your Windows Batch script to a Bash Shell script in a matter of seconds, making it compatible with macOS. 
+# Batch-to-Bash.sh
+This is a simple shell script which will do its best to convert your Windows Batch script to a Bash Shell script, allowing you to turn your Windows Batch script into a macOS compatible Bash Shell script with a minimal amount of work. At the time being, this script is not capable of completely converting Batch files to Shell scripts on its own, and will only assist developers with the conversion process.
